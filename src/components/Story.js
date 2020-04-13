@@ -11,6 +11,7 @@ const Story = ({ story, columns }) => {
       <span style={{ width: columns.author.width }}>{author}</span>
       <span style={{ width: columns.comments.width }}>{num_comments}</span>
       <span style={{ width: columns.points.width }}>{points}</span>
+      <span style={{ width: columns.archive.width }}></span>
     </div>
   );
 };
