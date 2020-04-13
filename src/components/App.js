@@ -5,10 +5,8 @@ import Stories from "./Stories";
 
 const App = ({ stories }) => {
   return (
-    <div>
-      <div className="ap">
-        <Stories stories={stories} />
-      </div>
+    <div className="ap">
+      <Stories stories={stories} />
     </div>
   );
 };
