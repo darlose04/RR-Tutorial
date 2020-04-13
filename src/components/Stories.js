@@ -29,7 +29,7 @@ const Stories = ({ stories }) => {
   return (
     <div>
       {(stories || []).map((story) => (
-        <Story key={story.objectID} story={story} />
+        <Story key={story.objectID} story={story} columns={COLUMNS} />
       ))}
     </div>
   );
