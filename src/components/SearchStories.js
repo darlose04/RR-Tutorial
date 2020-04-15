@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import { doFetchStories } from '../actions/story';
 import Button from './Button';
 
 class SearchStories extends Component {
@@ -40,4 +42,8 @@ class SearchStories extends Component {
     }
 }
 
-export default SearchStories;
+const mapDispatchToProps = (dispatch) => ({
+    onFetchStories: query => dispatch(doFetchStories(query)),
+});
+
+export default connect(null, mapDispatchToProps)(SearchStories);
