@@ -1,4 +1,4 @@
-const isNotArchived = (archiveIds) => (story) =>
+const isNotArchived = (archivedIds) => (story) =>
   archivedIds.indexOf(story.objectID) === -1;
 
 const getReadableStories = ({ storyState, archiveState }) =>
