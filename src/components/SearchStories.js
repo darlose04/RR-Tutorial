@@ -8,6 +8,24 @@ class SearchStories extends Component {
         this.state = {
             query: ''
         }
+
+        this.onChange = this.onChange.bind(this);
+        this.onSubmit = this.onSubmit.bind(this);
+    }
+
+    onSubmit(event) {
+        const { query } = this.state;
+        if (query) {
+            this.props.onFetchStories(query)
+            this.setState({ query: '' });
+        }
+
+        event.preventDefault();
+    }
+
+    onChange(event) {
+        const { value } = event.target;
+        this.setState({ query: value });
     }
 
     render() {
