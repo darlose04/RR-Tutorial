@@ -39,7 +39,6 @@ const Stories = ({ stories }) => {
           key={story.objectID}
           story={story}
           columns={COLUMNS}
-          onArchive={onArchive}
         />
       ))}
     </div>
