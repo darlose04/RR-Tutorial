@@ -48,4 +48,4 @@ const mapStateToProps = state => ({
   stories: getReadableStories(state),
 })
 
-export default connect(mapStateToProps, mapDispatchToProps)(Stories);
+export default connect(mapStateToProps)(Stories);
