@@ -7,7 +7,7 @@ import * as serviceWorker from "./serviceWorker";
 
 ReactDOM.render(
   <React.StrictMode>
-    <App stories={store.getState()} onArchive={() => {}} />
+    <App stories={store.getState().storyState} onArchive={() => {}} />
   </React.StrictMode>,
   document.getElementById("root")
 );
