@@ -4,3 +4,5 @@ function storyReducer(state, action) {
       return state;
   }
 }
+
+export default storyReducer;
